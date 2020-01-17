@@ -2,11 +2,9 @@
   <div>
     <!-- 轮播图 -->
     <el-carousel height="700px" class="carousel">
-      <el-carousel-item v-for="(item, index) in banners" :key="index">
-        <div
-          class="banner"
+      <el-carousel-item v-for="(item, index) in banners" :key="index"
           :style="`background:url(${$axios.defaults.baseURL + item.url}) center center no-repeat;`"
-        ></div>
+        >
       </el-carousel-item>
     </el-carousel>
 
